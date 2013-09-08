@@ -41,7 +41,7 @@ if (isClusterMaster) {
 
 if (is_http_thread) {
   //app.listen(CONF.app.port);
-  .listen(process.env.PORT || 3000)
+  app.listen(process.env.PORT || 3000)
 
 }
 
