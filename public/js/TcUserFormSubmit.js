@@ -11,7 +11,7 @@ $('#submitUserInfo').click(function(e) {
         data: form.serialize(),
         success: function(data) {
              console.log(data);
-
+            
         }
     });
 });
