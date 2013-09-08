@@ -26,6 +26,7 @@
     , "metalogger"         : "*"
     , "mongodb": ">= 0.9.6-7"
     , "mongojs": "*"
+    , "twilio": "*"
 
   }
   , "devDependencies" : {
