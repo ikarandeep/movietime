@@ -44,6 +44,7 @@ if (is_http_thread) {
   app.listen(process.env.PORT || 3000)
 
 }
+app.use(express.static(__dirname + '/public'));
 
 // If we are not running a cluster at all:
 if (!isClusterMaster && cluster.isMaster) {
