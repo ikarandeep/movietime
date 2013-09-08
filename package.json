@@ -25,6 +25,7 @@
     , "underscore"         : "1.x"
     , "metalogger"         : "*"
     , "mongodb": ">= 0.9.6-7"
+    , "mongojs": "*"
 
   }
   , "devDependencies" : {
