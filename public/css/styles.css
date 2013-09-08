@@ -1,4 +1,12 @@
 /* style sheet */
 
-html {background: ('img/background.jpg');
+
+body {background: black url('../img/background.jpg') no-repeat;}
+
+
+.jumbotron {
+color: white;
+background: black;
+padding: 20px;
+margin-top: 200px;
 }

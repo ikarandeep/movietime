@@ -4,51 +4,72 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="http://bootswatch.com/simplex/bootstrap.css" media="screen">
-    <link rel="stylesheet" href="http://bootswatch.com/bower_components/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://bootswatch.com/assets/css/bootswatch.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+    <link href="../select2/select2.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
 
-    <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="../" class="navbar-brand">Movietime</a>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse" id="navbar-main">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://builtwithbootstrap.com/" target="_blank">Built With Bootstrap</a></li>
-          </ul>
-
-        </div>
+<section id="home">
+  <div class="jumbotron">
+    <div class="container">
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
+    <div class="col-lg-10">
+      <input name="email" type="text" class="form-control" id="inputEmail" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+      <label for="inputPhone" class="col-lg-2 control-label">Mobile Number</label>
+    <div class="col-lg-10">
+      <input name="phone" type="number" class="form-control" id="inputPhone" placeholder="Phone Number">
+    </div>
+  </div>
+  <div class="form-group">
+      <label for="inputInterests" class="col-lg-2 control-label">Interests</label>
+        <select multiple id="e2_2" name="interests" class="form-control">
+           <option value="Action &amp; Adventure">Action &amp; Adventu re</option>
+                    <option value="Animation" >Animation</option>
+                    <option value="Anime &amp; Manga" >Anime &amp; Manga</option>
+                    <option value="Art House &amp; International" >Art House &amp; International</option>
+                    <option value="Classics" >Classics</option>
+                    <option value="Comedy" >Comedy</option>
+                    <option value="Cult Movies" >Cult Movies</option>
+                    <option value="Documentary" >Documentary</option>
+                    <option value="Drama" >Drama</option>
+                    <option value="Faith &amp; Spirituality" >Faith &amp; Spirituality</option>
+                    <option value="Gay &amp; Lesbian" >Gay &amp; Lesbian</option>
+                    <option value="Horror" >Horror</option>
+                    <option value="Kids &amp; Family" >Kids &amp; Family</option>
+                    <option value="Musical &amp; Performing Arts" selected="selected">Musical &amp; Performing Arts</option>
+                    <option value="Mystery &amp; Suspense" >Mystery &amp; Suspense</option>
+                    <option value="Romanace" >Romance</option>
+                    <option value="Science Fiction &amp; Fantasy" >Science Fiction &amp; Fantasy</option>
+                    <option value="Special Interests" >Special Interest</option>
+                    <option value="Sports &amp; Fitness" >Sports &amp; Fitness</option>
+                    <option value="Television" >Television</option>
+                    <option value="Western" >Western</option>
+        </select>
+  </div>
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button class="btn btn-default" id='submitUserInfo'>Submit</button>
       </div>
     </div>
-
-
-    <div class="container">
-
+</form>
+</section>
 
 
       <!-- Forms
       ================================================== -->
-      <div class="bs-docs-section">
-        <div class="row">
-          <h1 style="text-align: center"> Register </h1>
-          </div>
-        </div>
-
+<!--
         <div class="row">
           <div class="col-lg-6" style="width: inherit; margin-left: 20%">
             <div class="well">
-              <form class="bs-example form-horizontal">
+              <form class="form-horizontal">
                 <fieldset>
-                  <legend>Legend</legend>
                   <div class="form-group">
                     <label for="inputEmail" class="col-lg-2 control-label">Email</label>
                     <div class="col-lg-10">
@@ -77,36 +98,21 @@
           </div>
 
         </div>
-      </div>
-
-
-      <footer>
-        <div class="row">
-          <div class="col-lg-12">
-
-            <ul class="list-unstyled">
-              <li class="pull-right"><a href="#top">Back to top</a></li>
-              <li><a href="http://news.bootswatch.com" onclick="pageTracker._link(this.href); return false;">Blog</a></li>
-              <li><a href="http://feeds.feedburner.com/bootswatch">RSS</a></li>
-              <li><a href="https://twitter.com/thomashpark">Twitter</a></li>
-              <li><a href="https://github.com/thomaspark/bootswatch/">GitHub</a></li>
-              <li><a href="../help/#api">API</a></li>
-              <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=F22JEM3Q78JC2">Donate</a></li>
-            </ul>
-            <p>Made by <a href="http://thomaspark.me">Thomas Park</a>. Contact him at <a href="mailto:hello@thomaspark.me">hello@thomaspark.me</a>.</p>
-            <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.</p>
-            <p>Based on <a href="http://getbootstrap.com">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts">Google</a>. Favicon by <a href="https://twitter.com/geraldhiller">Gerald Hiller</a>.</p>
-
-          </div>
-        </div>
-
-      </footer>
-
-
-    </div>
+      </div>-->
 
 
     <script src="http://bootswatch.com/bower_components/jquery/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="js/TcUserFormSubmit.js"></script>
+        <script src="../select2/select2.js"></script>
+    <script>
+        $(document).ready(function() { 
+          $("#e2_2").select2({
+                placeholder: "Select a State"
+            });
+
+        });
+    </script>
+  
   </body>
 </html>
