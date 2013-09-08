@@ -10,8 +10,10 @@ $('#submitUserInfo').click(function(e) {
         dataType: 'json',
         data: form.serialize(),
         success: function(data) {
-            console.log(data);
-            alert('You are now going to receive amazing alerts from Movietime!');
+             console.log(data);
+             alert("You're good to go");
+
+
         }
     });
 });
